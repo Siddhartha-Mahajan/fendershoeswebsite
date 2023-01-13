@@ -102,18 +102,18 @@
 								        <li><a href="contact.html">Contact</a></li>
 								        <li><a href="thank-you.html">Thank You</a></li>
 								     </ul>
-
+									 <div class="hamburger">
+										<span class="bar"></span>
+										<span class="bar"></span>
+										<span class="bar"></span>
+									</div>
 								</li>
 								<li class="menu-item"><a href="shop.html" class="nav-link" data-effect="Shop">Shop</a></li>
 								
 								<li class="menu-item"><a href="contact.html" class="nav-link" data-effect="Contact">Contact</a></li>
 							</ul>
 
-							<div class="hamburger">
-				                <span class="bar"></span>
-				                <span class="bar"></span>
-				                <span class="bar"></span>
-				            </div>
+							
 
 						</div>
 					</nav>
@@ -126,11 +126,11 @@
 		
 </div><!--header-wrap-->
 
-<section>
+
 	<div class="container">
 		<div class="row">
 			<div class="col-md-12">
-				<h1 class="page-title">Contact us</h1>
+				<h2 class="page-title">Contact us</h1>
 				<div class="breadcrumbs">
 					<span class="item"><a href="index.html">Home /</a></span>
 					<span class="item">Contact us</span>
@@ -138,7 +138,7 @@
 			</div>
 		</div>
 	</div>
-</section>
+
 
 <section class="contact-information padding-large mt-3">
 	<div class="container">
@@ -171,43 +171,78 @@
 				</div><!--contact-detail-->
 			</div><!--col-md-6-->
 
-			<div class="col-md-6 p-0">
-				
-				<div class="contact-information">
-					<h2>Send A Message</h2>
-					<form name="contactform" action="contact.php" method="post" class="contact-form d-flex flex-wrap mt-4">
-						<div class="row">
-					    	<div class="col-md-6">
-								<input type="text" minlength="2" name="name" placeholder="Name" class="u-full-width" required>
-							</div>
-							<div class="col-md-6">
-								<input type="email" name="email" placeholder="E-mail" class="u-full-width" required>
-							</div>
-						</div>
+			
 
-						<div class="row">
-							<div class="col-md-12">
-
-								<textarea class="u-full-width" name="message" placeholder="Message" style="height: 150px;" required></textarea>
-
-								<label>
-								    <input type="checkbox" required>
-								    <span class="label-body">I agree all the <a href="#">terms and conditions</a></span>
-								</label>
-
-								<button type="submit" name="submit" class="btn btn-full btn-rounded">Submit</button>
-							</div>
-						</div>
-					</form>
-
-				</div><!--contact-information-->
-
-			</div><!--col-md-6-->
+								
 
 		</div>
 	</div>
 </section>
+<section>
+	<h2 class="content-head is-center">Contact Us!</h2>
+  <aside>
+       
+           We would <em>love</em> to hear from you! <br>
+           Please use the <b><em>Contact Form</em></b>
+           to send us a message.
+       
+   </aside>
 
+<!-- START HERE -->
+   <link rel="stylesheet" href="https://unpkg.com/purecss@1.0.0/build/pure-min.css">
+   <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.4.0/css/font-awesome.min.css">
+   <!-- Style The Contact Form How Ever You Prefer -->
+   <link rel="stylesheet" href="stylemail.css">
+
+  <form class="gform pure-form pure-form-stacked" method="POST" data-email="example@email.net"
+  action="https://script.google.com/macros/s/AKfycbzKs_FuFlSYNWVaC_MogF4d9bisoau6msMS8zU-PNTpG2XZcvcE1mh6ecrYkoiY5fT-oQ/exec">
+    <!-- change the form action to your script url -->
+
+    <div class="form-elements">
+      <fieldset class="pure-group">
+        <label for="name">Name: </label>
+        <input id="name" name="name" placeholder="Enter your name" />
+      </fieldset>
+
+      <fieldset class="pure-group">
+        <label for="message">Message: </label>
+        <textarea id="message" name="message" rows="10"
+        placeholder="Tell us what's on your mind..."></textarea>
+      </fieldset>
+
+      <fieldset class="pure-group">
+        <label for="email"><em>Your</em> Email Address:</label>
+        <input id="email" name="email" type="email" value=""
+        required placeholder="your.name@email.com"/>
+      </fieldset>
+
+      <fieldset class="pure-group">
+        <label for="Number">Phone No.: </label>
+        <input id="color" name="Number" placeholder="Enter Your Phone No." />
+      </fieldset>
+
+      <fieldset class="pure-group honeypot-field">
+        <label for="honeypot">To help avoid spam, utilize a Honeypot technique with a hidden text field; must be empty to submit the form! Otherwise, we assume the user is a spam bot.</label>
+        <input id="honeypot" type="text" name="honeypot" value="" />
+      </fieldset>
+
+    
+    </div>
+	<button type="submit" name="submit" class="btn btn-full btn-rounded">Submit</button>
+
+    <!-- Customise the Thankyou Message People See when they submit the form: -->
+    <div class="thankyou_message" style="display:none;">
+      <h2><em>Thanks</em> for contacting us!
+        We will get back to you soon!</h2>
+    </div>
+
+  </form>
+
+  <!-- Submit the Form to Google Using "AJAX" -->
+  <script data-cfasync="false" src="form-submission-handler.js"></script>
+<!-- END -->
+
+</section>
 <section class="google-map">
 	<div class="mapouter"><div class="gmap_canvas"><iframe width="100%" height="500" id="gmap_canvas" src="https://maps.google.com/maps?q=Figaro%20International,%20Sanjay%20Place,%20Agra,%20Uttar%20Pradesh,%20India,&t=&z=13&ie=UTF8&iwloc=&output=embed" frameborder="0" scrolling="no" marginheight="0" marginwidth="0"></iframe><a href="https://getasearch.com/fmovies"></a><br><style>.mapouter{position:relative;text-align:right;height:500px;width:100%;}</style><a href="https://www.embedgooglemap.net">embedgooglemap.net</a><style>.gmap_canvas {overflow:hidden;background:none!important;height:500px;width:100%;}</style></div></div>
 </section>
